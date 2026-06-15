@@ -1,0 +1,49 @@
+Name                               Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------------------------
+jump_game_ii.py                       15      1     10      1    92%   7
+------------------------------------------------------------------------------
+TOTAL                                 15      1     10      1    92%
+
+
+
+Function Coverage Report:
+========================================
+Function: Solution.jump (lines 3-21) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 10 items
+
+session_2e029ac7/test_jump_game_ii.py::test_jump_empty_array PASSED      [ 10%]
+session_2e029ac7/test_jump_game_ii.py::test_jump_single_element PASSED   [ 20%]
+session_2e029ac7/test_jump_game_ii.py::test_jump_two_elements PASSED     [ 30%]
+session_2e029ac7/test_jump_game_ii.py::test_jump_multiple_elements PASSED [ 40%]
+session_2e029ac7/test_jump_game_ii.py::test_jump_end_reachable PASSED    [ 50%]
+session_2e029ac7/test_jump_game_ii.py::test_jump_end_not_reachable FAILED [ 60%]
+session_2e029ac7/test_jump_game_ii.py::test_jump_end_reachable_with_zero PASSED [ 70%]
+session_2e029ac7/test_jump_game_ii.py::test_jump_end_reachable_with_negative PASSED [ 80%]
+session_2e029ac7/test_jump_game_ii.py::test_basic PASSED                 [ 90%]
+session_2e029ac7/test_jump_game_ii.py::test_cover_untested_lines PASSED  [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_jump_end_not_reachable __________________________
+
+    def test_jump_end_not_reachable():
+        solution = Solution()
+        nums = [2, 3, 1, 1, 5]
+>       assert solution.jump(nums) == 3
+E       assert 2 == 3
+E        +  where 2 = jump([2, 3, 1, 1, 5])
+E        +    where jump = <jump_game_ii.Solution object at 0xffff8262dea0>.jump
+
+session_2e029ac7/test_jump_game_ii.py:34: AssertionError
+=========================== short test summary info ============================
+FAILED session_2e029ac7/test_jump_game_ii.py::test_jump_end_not_reachable - a...
+========================= 1 failed, 9 passed in 0.03s ==========================

@@ -1,0 +1,36 @@
+Name                 Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------
+add_two_numbers.py      51      0     14      0   100%
+----------------------------------------------------------------
+TOTAL                   51      0     14      0   100%
+Function Coverage Report:
+========================================
+Function: ListNode.__init__ (lines 3-5) - Covered
+Function: add_two_numbers (lines 8-28) - Covered
+Function: add_two_numbers_recursive (lines 31-49) - Covered
+Function: add_two_numbers_optimized (lines 52-72) - Covered
+
+Overall function coverage: 100.00%
+============================= test session starts =============================
+platform win32 -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0 -- C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe
+cachedir: .pytest_cache
+rootdir: D:\app\uploads\session_adc13a0d
+plugins: cov-7.0.0
+collecting ... collected 14 items
+
+test_add_two_numbers.py::test_add_two_numbers_example1 PASSED            [  7%]
+test_add_two_numbers.py::test_add_two_numbers_example2 PASSED            [ 14%]
+test_add_two_numbers.py::test_add_two_numbers_example3 PASSED            [ 21%]
+test_add_two_numbers.py::test_add_two_numbers_recursive_example1 PASSED  [ 28%]
+test_add_two_numbers.py::test_add_two_numbers_recursive_example2 PASSED  [ 35%]
+test_add_two_numbers.py::test_add_two_numbers_recursive_example3 PASSED  [ 42%]
+test_add_two_numbers.py::test_add_two_numbers_optimized_example1 PASSED  [ 50%]
+test_add_two_numbers.py::test_add_two_numbers_optimized_example2 PASSED  [ 57%]
+test_add_two_numbers.py::test_add_two_numbers_optimized_example3 PASSED  [ 64%]
+test_add_two_numbers.py::test_ListNode_init PASSED                       [ 71%]
+test_add_two_numbers.py::test_ListNode_next PASSED                       [ 78%]
+test_add_two_numbers.py::test_coverage[add_two_numbers] PASSED           [ 85%]
+test_add_two_numbers.py::test_coverage[add_two_numbers_recursive] PASSED [ 92%]
+test_add_two_numbers.py::test_coverage[add_two_numbers_optimized] PASSED [100%]
+
+============================= 14 passed in 0.06s ==============================

@@ -1,0 +1,11 @@
+Coverage report: 61%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-10 21:26 +0800
+
+ 	 	Statements	 	Branches	 	Total
+File	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_easy\test_best_time_buy_sell_stock.py	 	58%	52	22	0	 	80%	10	2	 	61%
+Total	 	58%	52	22	0	 	80%	10	2	 	61%
+coverage.py v7.14.1, created at 2026-06-10 21:26 +0800

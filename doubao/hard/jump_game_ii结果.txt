@@ -1,0 +1,11 @@
+Coverage report: 95%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-10 21:06 +0800
+
+ 	 	Statements	 	Branches	 	Total
+File	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_hard\test_jump_game_ii.py	 	100%	32	0	0	 	80%	10	2	 	95%
+Total	 	100%	32	0	0	 	80%	10	2	 	95%
+coverage.py v7.14.1, created at 2026-06-10 21:06 +0800

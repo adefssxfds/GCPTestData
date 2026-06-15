@@ -1,0 +1,53 @@
+Name                           Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------------
+four_sum.py                       24      0     16      0   100%
+--------------------------------------------------------------------------
+TOTAL                             24      0     16      0   100%
+
+
+
+Function Coverage Report:
+========================================
+Function: Solution.fourSum (lines 3-30) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 5 items
+
+session_1580201f/test_four_sum.py::test_fourSum_example1 PASSED          [ 20%]
+session_1580201f/test_four_sum.py::test_fourSum_example2 PASSED          [ 40%]
+session_1580201f/test_four_sum.py::test_fourSum_empty_array PASSED       [ 60%]
+session_1580201f/test_four_sum.py::test_fourSum_single_number PASSED     [ 80%]
+session_1580201f/test_four_sum.py::test_fourSum_negative_numbers FAILED  [100%]
+
+=================================== FAILURES ===================================
+________________________ test_fourSum_negative_numbers _________________________
+
+    def test_fourSum_negative_numbers():
+        solution = Solution()
+        nums = [-1, -2, -3, -4]
+        target = -6
+        expected = [[-1, -2, -3, -4]]
+>       assert solution.fourSum(nums, target) == expected
+E       AssertionError: assert [] == [[-1, -2, -3, -4]]
+E
+E         Right contains one more item: [-1, -2, -3, -4]
+E
+E         Full diff:
+E         + []
+E         - [
+E         -     [...
+E
+E         ...Full output truncated (6 lines hidden), use '-vv' to show
+
+session_1580201f/test_four_sum.py:37: AssertionError
+=========================== short test summary info ============================
+FAILED session_1580201f/test_four_sum.py::test_fourSum_negative_numbers - Ass...
+========================= 1 failed, 4 passed in 0.02s ==========================

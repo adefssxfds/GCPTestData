@@ -1,0 +1,30 @@
+Name                           Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------------
+container_with_most_water.py      37      0     12      0   100%
+--------------------------------------------------------------------------
+TOTAL                             37      0     12      0   100%
+Function Coverage Report:
+========================================
+Function: max_area (lines 2-18) - Covered
+Function: max_area_brute_force (lines 21-32) - Covered
+Function: max_area_optimized (lines 35-52) - Covered
+
+Overall function coverage: 100.00%
+============================= test session starts =============================
+platform win32 -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0 -- C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe
+cachedir: .pytest_cache
+rootdir: D:\app\uploads\session_adc13a0d
+plugins: cov-7.0.0
+collecting ... collected 9 items
+
+test_container_with_most_water.py::test_max_area PASSED                  [ 11%]
+test_container_with_most_water.py::test_max_area_brute_force PASSED      [ 22%]
+test_container_with_most_water.py::test_max_area_optimized PASSED        [ 33%]
+test_container_with_most_water.py::test_max_area_empty_list PASSED       [ 44%]
+test_container_with_most_water.py::test_max_area_brute_force_empty_list PASSED [ 55%]
+test_container_with_most_water.py::test_max_area_optimized_empty_list PASSED [ 66%]
+test_container_with_most_water.py::test_max_area_single_element PASSED   [ 77%]
+test_container_with_most_water.py::test_max_area_brute_force_single_element PASSED [ 88%]
+test_container_with_most_water.py::test_max_area_optimized_single_element PASSED [100%]
+
+============================== 9 passed in 0.04s ==============================

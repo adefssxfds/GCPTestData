@@ -1,0 +1,11 @@
+Coverage report: 99%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-12 17:11 +0800
+
+ 	 	Statements	 	Branches	 	Total
+File	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_medium\test_longest_substring_without_repeating.py	 	100%	76	0	0	 	96%	28	1	 	99%
+Total	 	100%	76	0	0	 	96%	28	1	 	99%
+coverage.py v7.14.1, created at 2026-06-12 17:11 +0800

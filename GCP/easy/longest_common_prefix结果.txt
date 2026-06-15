@@ -1,0 +1,39 @@
+Name                                        Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------------------------------------
+longest_common_prefix.py                       59      2     34      2    96%   31, 53
+---------------------------------------------------------------------------------------
+TOTAL                                          59      2     34      2    96%
+
+
+
+Function Coverage Report:
+========================================
+Function: longest_common_prefix (lines 2-14) - Covered
+Function: longest_common_prefix_horizontal (lines 15-28) - Covered
+Function: longest_common_prefix_divide_conquer (lines 29-50) - Covered
+Function: lcp_helper (lines 33-41) - Covered
+Function: common_prefix (lines 43-48) - Covered
+Function: longest_common_prefix_trie (lines 51-79) - Covered
+Function: TrieNode.__init__ (lines 56-58) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+collecting ... collected 12 items
+
+test_longest_common_prefix.py::test_longest_common_prefix PASSED         [  8%]
+test_longest_common_prefix.py::test_longest_common_prefix_horizontal PASSED [ 16%]
+test_longest_common_prefix.py::test_longest_common_prefix_divide_conquer PASSED [ 25%]
+test_longest_common_prefix.py::test_longest_common_prefix_trie PASSED    [ 33%]
+test_longest_common_prefix.py::test_lcp_helper PASSED                    [ 41%]
+test_longest_common_prefix.py::test_common_prefix PASSED                 [ 50%]
+test_longest_common_prefix.py::test_longest_common_prefix_empty_list PASSED [ 58%]
+test_longest_common_prefix.py::test_longest_common_prefix_single_string PASSED [ 66%]
+test_longest_common_prefix.py::test_longest_common_prefix_horizontal_empty_list PASSED [ 75%]
+test_longest_common_prefix.py::test_longest_common_prefix_horizontal_single_string PASSED [ 83%]
+test_longest_common_prefix.py::test_edge_cases PASSED                    [ 91%]
+test_longest_common_prefix.py::test_all_implementations_consistency PASSED [100%]
+
+============================== 12 passed in 0.03s ==============================

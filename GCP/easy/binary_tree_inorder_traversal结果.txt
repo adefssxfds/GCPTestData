@@ -1,0 +1,66 @@
+Name                                                Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------------------------------------
+binary_tree_inorder_traversal.py                       60      1     24      1    98%   61
+-----------------------------------------------------------------------------------------------
+TOTAL                                                  60      1     24      1    98%
+
+
+
+Function Coverage Report:
+========================================
+Function: TreeNode.__init__ (lines 6-9) - Covered
+Function: inorder_traversal (lines 12-29) - Covered
+Function: helper (lines 15-26) - Covered
+Function: inorder_traversal_iterative (lines 32-46) - Covered
+Function: inorder_traversal_morris (lines 49-71) - Covered
+Function: inorder_traversal_iterative_simple (lines 74-94) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 36 items
+
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_example1 PASSED [  2%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_example2 PASSED [  5%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_example3 PASSED [  8%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_example1 PASSED [ 11%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_example2 PASSED [ 13%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_example3 PASSED [ 16%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_morris_example1 PASSED [ 19%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_morris_example2 PASSED [ 22%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_morris_example3 PASSED [ 25%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_simple_example1 PASSED [ 27%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_simple_example2 PASSED [ 30%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_simple_example3 PASSED [ 33%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_helper_example1 PASSED [ 36%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_helper_example2 PASSED [ 38%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_helper_example3 PASSED [ 41%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_TreeNode_init PASSED [ 44%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_uncovered1 PASSED [ 47%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_uncovered2 PASSED [ 50%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_uncovered3 PASSED [ 52%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_uncovered4 PASSED [ 55%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_uncovered5 PASSED [ 58%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_uncovered1 PASSED [ 61%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_uncovered2 PASSED [ 63%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_uncovered3 PASSED [ 66%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_uncovered4 PASSED [ 69%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_uncovered5 PASSED [ 72%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_morris_uncovered1 PASSED [ 75%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_morris_uncovered2 PASSED [ 77%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_morris_uncovered3 PASSED [ 80%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_morris_uncovered4 PASSED [ 83%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_morris_uncovered5 PASSED [ 86%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_simple_uncovered1 PASSED [ 88%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_simple_uncovered2 PASSED [ 91%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_simple_uncovered3 PASSED [ 94%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_simple_uncovered4 PASSED [ 97%]
+session_74459b87/test_binary_tree_inorder_traversal.py::test_inorder_traversal_iterative_simple_uncovered5 PASSED [100%]
+
+============================== 36 passed in 0.05s ==============================

@@ -1,0 +1,54 @@
+Name                           Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------------
+minimum_depth_binary_tree.py      43      2     28      5    90%   47, 67, 93->90, 99->101, 101->90
+--------------------------------------------------------------------------
+TOTAL                             43      2     28      5    90%
+Function Coverage Report:
+========================================
+Function: TreeNode.__init__ (lines 7-10) - Covered
+Function: min_depth (lines 13-47) - Covered
+Function: min_depth_recursive (lines 50-71) - Covered
+Function: min_depth_iterative_dfs (lines 74-104) - Covered
+
+Overall function coverage: 100.00%
+============================= test session starts =============================
+platform win32 -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0 -- C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe
+cachedir: .pytest_cache
+rootdir: D:\app\uploads\session_a6751897
+plugins: cov-7.0.0
+collecting ... collected 16 items
+
+test_minimum_depth_binary_tree.py::test_min_depth_bfs PASSED             [  6%]
+test_minimum_depth_binary_tree.py::test_min_depth_bfs_empty_tree PASSED  [ 12%]
+test_minimum_depth_binary_tree.py::test_min_depth_bfs_single_node_tree PASSED [ 18%]
+test_minimum_depth_binary_tree.py::test_min_depth_recursive PASSED       [ 25%]
+test_minimum_depth_binary_tree.py::test_min_depth_recursive_empty_tree PASSED [ 31%]
+test_minimum_depth_binary_tree.py::test_min_depth_recursive_single_node_tree PASSED [ 37%]
+test_minimum_depth_binary_tree.py::test_min_depth_iterative_dfs PASSED   [ 43%]
+test_minimum_depth_binary_tree.py::test_min_depth_iterative_dfs_empty_tree PASSED [ 50%]
+test_minimum_depth_binary_tree.py::test_min_depth_iterative_dfs_single_node_tree PASSED [ 56%]
+test_minimum_depth_binary_tree.py::test_tree_node_init PASSED            [ 62%]
+test_minimum_depth_binary_tree.py::test_tree_node_init_with_left_and_right PASSED [ 68%]
+test_minimum_depth_binary_tree.py::test_min_depth_bfs_with_left_and_right PASSED [ 75%]
+test_minimum_depth_binary_tree.py::test_min_depth_bfs_left_empty_tree PASSED [ 81%]
+test_minimum_depth_binary_tree.py::test_min_depth_bfs_right_empty_tree PASSED [ 87%]
+test_minimum_depth_binary_tree.py::test_min_depth_bfs_multilevel_tree FAILED [ 93%]
+test_minimum_depth_binary_tree.py::test_basic PASSED                     [100%]
+
+================================== FAILURES ===================================
+_____________________ test_min_depth_bfs_multilevel_tree ______________________
+
+    def test_min_depth_bfs_multilevel_tree():
+        node = TreeNode(val=1)
+        node.left = TreeNode(val=2)
+        node.right = TreeNode(val=3)
+        node.left.left = TreeNode(val=4)
+        node.left.right = TreeNode(val=5)
+>       assert min_depth(node) == 3
+E       assert 2 == 3
+E        +  where 2 = min_depth(<minimum_depth_binary_tree.TreeNode object at 0x000001A77ECB7140>)
+
+test_minimum_depth_binary_tree.py:149: AssertionError
+=========================== short test summary info ===========================
+FAILED test_minimum_depth_binary_tree.py::test_min_depth_bfs_multilevel_tree
+======================== 1 failed, 15 passed in 0.10s =========================

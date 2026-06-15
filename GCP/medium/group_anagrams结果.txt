@@ -1,0 +1,98 @@
+Name                                 Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------------------
+group_anagrams.py                       26      0     10      0   100%
+--------------------------------------------------------------------------------
+TOTAL                                   26      0     10      0   100%
+
+
+
+Function Coverage Report:
+========================================
+Function: group_anagrams (lines 3-10) - Covered
+Function: group_anagrams_counting (lines 13-24) - Covered
+Function: group_anagrams_prime (lines 27-38) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 9 items
+
+session_71ae677a/test_group_anagrams.py::test_group_anagrams_example1 FAILED [ 11%]
+session_71ae677a/test_group_anagrams.py::test_group_anagrams_empty_string PASSED [ 22%]
+session_71ae677a/test_group_anagrams.py::test_group_anagrams_single_character PASSED [ 33%]
+session_71ae677a/test_group_anagrams.py::test_group_anagrams_counting_example1 FAILED [ 44%]
+session_71ae677a/test_group_anagrams.py::test_group_anagrams_counting_empty_string PASSED [ 55%]
+session_71ae677a/test_group_anagrams.py::test_group_anagrams_counting_single_character PASSED [ 66%]
+session_71ae677a/test_group_anagrams.py::test_group_anagrams_prime_example1 FAILED [ 77%]
+session_71ae677a/test_group_anagrams.py::test_group_anagrams_prime_empty_string PASSED [ 88%]
+session_71ae677a/test_group_anagrams.py::test_group_anagrams_prime_single_character PASSED [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_group_anagrams_example1 _________________________
+
+    def test_group_anagrams_example1():
+        """Test group_anagrams with example 1 input."""
+        input_data = ["eat", "tea", "tan", "ate", "nat", "bat"]
+        expected_output = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
+>       assert group_anagrams(input_data) == expected_output
+E       AssertionError: assert [['eat', 'tea...at'], ['bat']] == [['bat'], ['n...'eat', 'tea']]
+E
+E         At index 0 diff: ['eat', 'tea', 'ate'] != ['bat']
+E
+E         Full diff:
+E           [
+E         +     [
+E         +         'eat',...
+E
+E         ...Full output truncated (20 lines hidden), use '-vv' to show
+
+session_71ae677a/test_group_anagrams.py:9: AssertionError
+____________________ test_group_anagrams_counting_example1 _____________________
+
+    def test_group_anagrams_counting_example1():
+        """Test group_anagrams_counting with example 1 input."""
+        input_data = ["eat", "tea", "tan", "ate", "nat", "bat"]
+        expected_output = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
+>       assert group_anagrams_counting(input_data) == expected_output
+E       AssertionError: assert [['eat', 'tea...at'], ['bat']] == [['bat'], ['n...'eat', 'tea']]
+E
+E         At index 0 diff: ['eat', 'tea', 'ate'] != ['bat']
+E
+E         Full diff:
+E           [
+E         +     [
+E         +         'eat',...
+E
+E         ...Full output truncated (20 lines hidden), use '-vv' to show
+
+session_71ae677a/test_group_anagrams.py:28: AssertionError
+______________________ test_group_anagrams_prime_example1 ______________________
+
+    def test_group_anagrams_prime_example1():
+        """Test group_anagrams_prime with example 1 input."""
+        input_data = ["eat", "tea", "tan", "ate", "nat", "bat"]
+        expected_output = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
+>       assert group_anagrams_prime(input_data) == expected_output
+E       AssertionError: assert [['eat', 'tea...at'], ['bat']] == [['bat'], ['n...'eat', 'tea']]
+E
+E         At index 0 diff: ['eat', 'tea', 'ate'] != ['bat']
+E
+E         Full diff:
+E           [
+E         +     [
+E         +         'eat',...
+E
+E         ...Full output truncated (20 lines hidden), use '-vv' to show
+
+session_71ae677a/test_group_anagrams.py:47: AssertionError
+=========================== short test summary info ============================
+FAILED session_71ae677a/test_group_anagrams.py::test_group_anagrams_example1
+FAILED session_71ae677a/test_group_anagrams.py::test_group_anagrams_counting_example1
+FAILED session_71ae677a/test_group_anagrams.py::test_group_anagrams_prime_example1
+========================= 3 failed, 6 passed in 0.04s ==========================

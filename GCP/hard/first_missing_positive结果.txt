@@ -1,0 +1,31 @@
+Name                                         Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------------------------------
+first_missing_positive.py                       14      0     12      0   100%
+----------------------------------------------------------------------------------------
+TOTAL                                           14      0     12      0   100%
+
+
+
+Function Coverage Report:
+========================================
+Function: Solution.firstMissingPositive (lines 2-16) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 6 items
+
+session_1828384e/test_first_missing_positive.py::test_firstMissingPositive_empty PASSED [ 16%]
+session_1828384e/test_first_missing_positive.py::test_firstMissingPositive_all_negatives PASSED [ 33%]
+session_1828384e/test_first_missing_positive.py::test_firstMissingPositive_missing_positive PASSED [ 50%]
+session_1828384e/test_first_missing_positive.py::test_firstMissingPositive_all_positive PASSED [ 66%]
+session_1828384e/test_first_missing_positive.py::test_firstMissingPositive_all_duplicates PASSED [ 83%]
+session_1828384e/test_first_missing_positive.py::test_solution_all_methods PASSED [100%]
+
+============================== 6 passed in 0.02s ===============================

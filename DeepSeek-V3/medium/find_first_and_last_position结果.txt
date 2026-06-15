@@ -1,0 +1,11 @@
+Coverage report: 99%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-10 22:45 +0800
+
+ 	 	Statements	 	Branches	 	Total
+File	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_medium\test_find_first_and_last_position.py	 	100%	111	0	0	 	93%	28	2	 	99%
+Total	 	100%	111	0	0	 	93%	28	2	 	99%
+coverage.py v7.14.1, created at 2026-06-10 22:45 +0800

@@ -1,0 +1,28 @@
+Name                                                   Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------------------------------------
+letter_combinations_phone_number.py                       16      0      8      0   100%
+--------------------------------------------------------------------------------------------------
+TOTAL                                                     16      0      8      0   100%
+
+
+
+Function Coverage Report:
+========================================
+Function: Solution.letterCombinations (lines 2-24) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 3 items
+
+session_6293ac40/test_letter_combinations_phone_number.py::test_letter_combinations_empty_digits PASSED [ 33%]
+session_6293ac40/test_letter_combinations_phone_number.py::test_letter_combinations_single_digit PASSED [ 66%]
+session_6293ac40/test_letter_combinations_phone_number.py::test_letter_combinations_multiple_digits PASSED [100%]
+
+============================== 3 passed in 0.01s ===============================

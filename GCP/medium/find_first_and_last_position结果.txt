@@ -1,0 +1,52 @@
+Name                              Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------------------
+find_first_and_last_position.py      27      0     16      0   100%
+-----------------------------------------------------------------------------
+TOTAL                                27      0     16      0   100%
+Function Coverage Report:
+========================================
+Function: Solution.searchRange (lines 3-38) - Covered
+
+Overall function coverage: 100.00%
+============================= test session starts =============================
+platform win32 -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0 -- C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe
+cachedir: .pytest_cache
+rootdir: D:\app\uploads\session_fb2f593f
+plugins: cov-7.0.0
+collecting ... collected 8 items
+
+test_find_first_and_last_position.py::test_searchRange_example1 PASSED   [ 12%]
+test_find_first_and_last_position.py::test_searchRange_example2 PASSED   [ 25%]
+test_find_first_and_last_position.py::test_searchRange_emptyArray PASSED [ 37%]
+test_find_first_and_last_position.py::test_searchRange_singleElementArray PASSED [ 50%]
+test_find_first_and_last_position.py::test_searchRange_targetNotInArray PASSED [ 62%]
+test_find_first_and_last_position.py::test_searchRange_targetAtBeginning PASSED [ 75%]
+test_find_first_and_last_position.py::test_searchRange_targetAtEnd PASSED [ 87%]
+test_find_first_and_last_position.py::test_searchRange_targetInMiddle FAILED [100%]
+
+================================== FAILURES ===================================
+_______________________ test_searchRange_targetInMiddle _______________________
+
+    def test_searchRange_targetInMiddle():
+        '''Test with target in the middle of array'''
+        nums = [5, 7, 7, 8, 8, 10]
+        target = 7
+        expected = [2, 2]
+        solution = Solution()
+        result = solution.searchRange(nums, target)
+>       assert result == expected
+E       AssertionError: assert [1, 2] == [2, 2]
+E         
+E         At index 0 diff: 1 != 2
+E         
+E         Full diff:
+E           [
+E         -     2,
+E         ?     ^...
+E         
+E         ...Full output truncated (4 lines hidden), use '-vv' to show
+
+test_find_first_and_last_position.py:74: AssertionError
+=========================== short test summary info ===========================
+FAILED test_find_first_and_last_position.py::test_searchRange_targetInMiddle
+========================= 1 failed, 7 passed in 0.08s =========================

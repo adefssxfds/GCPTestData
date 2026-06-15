@@ -1,0 +1,38 @@
+====================Total Coverage=====================
+
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+user1/add_binary.py      23      0     12      0   100%
+-----------------------------------------------------------------
+TOTAL                    23      0     12      0   100%
+
+
+
+====================Function Coverage=====================
+
+Function Coverage Report:
+========================================
+Function: Solution.addBinary (lines 2-32) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+====================Pytest Result=====================
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 7 items
+
+user1/test_add_binary.py::test_addBinary_example1 PASSED                 [ 14%]
+user1/test_add_binary.py::test_addBinary_example2 PASSED                 [ 28%]
+user1/test_add_binary.py::test_addBinary_empty_string PASSED             [ 42%]
+user1/test_add_binary.py::test_addBinary_same_length PASSED              [ 57%]
+user1/test_add_binary.py::test_addBinary_different_length PASSED         [ 71%]
+user1/test_add_binary.py::test_addBinary_all_zeros PASSED                [ 85%]
+user1/test_add_binary.py::test_addBinary_all_ones PASSED                 [100%]
+
+============================== 7 passed in 0.02s ===============================

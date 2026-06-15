@@ -1,0 +1,53 @@
+Name                                         Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------------------------------
+merge_two_sorted_lists.py                       46      4     22      5    87%   29, 40, 42, 44, 57->60
+----------------------------------------------------------------------------------------
+TOTAL                                           46      4     22      5    87%
+
+
+
+Function Coverage Report:
+========================================
+Function: ListNode.__init__ (lines 4-6) - Covered
+Function: merge_two_lists (lines 9-22) - Covered
+Function: merge_two_lists_recursive (lines 25-35) - Covered
+Function: merge_two_lists_in_place (lines 38-60) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 9 items
+
+session_f8b89c4f/test_merge_two_sorted_lists.py::test_merge_two_lists PASSED [ 11%]
+session_f8b89c4f/test_merge_two_sorted_lists.py::test_merge_two_lists_empty_lists FAILED [ 22%]
+session_f8b89c4f/test_merge_two_sorted_lists.py::test_merge_two_lists_second_empty PASSED [ 33%]
+session_f8b89c4f/test_merge_two_sorted_lists.py::test_merge_two_lists_recursive PASSED [ 44%]
+session_f8b89c4f/test_merge_two_sorted_lists.py::test_merge_two_lists_in_place PASSED [ 55%]
+session_f8b89c4f/test_merge_two_sorted_lists.py::test_list_node PASSED   [ 66%]
+session_f8b89c4f/test_merge_two_sorted_lists.py::test_list_node_next PASSED [ 77%]
+session_f8b89c4f/test_merge_two_sorted_lists.py::test_merge_two_lists_equal_values PASSED [ 88%]
+session_f8b89c4f/test_merge_two_sorted_lists.py::test_merge_two_lists_first_empty PASSED [100%]
+
+=================================== FAILURES ===================================
+_______________________ test_merge_two_lists_empty_lists _______________________
+
+    def test_merge_two_lists_empty_lists():
+        '''Test merge_two_lists with both lists empty'''
+        list1 = ListNode(0)
+        list2 = ListNode(0)
+        merged_list = merge_two_lists(list1, list2)
+        assert merged_list.val == 0
+>       assert merged_list.next is None
+E       assert <merge_two_sorted_lists.ListNode object at 0xffff8396ae60> is None
+E        +  where <merge_two_sorted_lists.ListNode object at 0xffff8396ae60> = <merge_two_sorted_lists.ListNode object at 0xffff8396af20>.next
+
+session_f8b89c4f/test_merge_two_sorted_lists.py:28: AssertionError
+=========================== short test summary info ============================
+FAILED session_f8b89c4f/test_merge_two_sorted_lists.py::test_merge_two_lists_empty_lists
+========================= 1 failed, 8 passed in 0.05s ==========================

@@ -1,0 +1,46 @@
+Name                                      Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------------------------------
+interleaving_string.py                       15      0     12      0   100%
+-------------------------------------------------------------------------------------
+TOTAL                                        15      0     12      0   100%
+
+
+
+Function Coverage Report:
+========================================
+Function: Solution.isInterleave (lines 2-17) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 6 items
+
+session_0c0a6f16/test_interleaving_string.py::test_isInterleave_empty PASSED [ 16%]
+session_0c0a6f16/test_interleaving_string.py::test_isInterleave_same_length PASSED [ 33%]
+session_0c0a6f16/test_interleaving_string.py::test_isInterleave_different_length PASSED [ 50%]
+session_0c0a6f16/test_interleaving_string.py::test_isInterleave_not_interleaved PASSED [ 66%]
+session_0c0a6f16/test_interleaving_string.py::test_isInterleave_reverse_interleaving FAILED [ 83%]
+session_0c0a6f16/test_interleaving_string.py::test_isInterleave_both_reversed PASSED [100%]
+
+=================================== FAILURES ===================================
+____________________ test_isInterleave_reverse_interleaving ____________________
+
+    def test_isInterleave_reverse_interleaving():
+        """Test with s3 formed by reverse interleaving s1 and s2."""
+        solution = Solution()
+        s1, s2, s3 = "abc", "def", "defcba"
+>       assert solution.isInterleave(s1, s2, s3) == True
+E       AssertionError: assert False == True
+E        +  where False = isInterleave('abc', 'def', 'defcba')
+E        +    where isInterleave = <interleaving_string.Solution object at 0xffff8d35ccd0>.isInterleave
+
+session_0c0a6f16/test_interleaving_string.py:32: AssertionError
+=========================== short test summary info ============================
+FAILED session_0c0a6f16/test_interleaving_string.py::test_isInterleave_reverse_interleaving
+========================= 1 failed, 5 passed in 0.03s ==========================

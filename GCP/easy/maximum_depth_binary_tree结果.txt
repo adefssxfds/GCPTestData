@@ -1,0 +1,33 @@
+Name                           Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------------
+maximum_depth_binary_tree.py      41      0     20      0   100%
+--------------------------------------------------------------------------
+TOTAL                             41      0     20      0   100%
+Function Coverage Report:
+========================================
+Function: TreeNode.__init__ (lines 6-9) - Covered
+Function: max_depth (lines 12-18) - Covered
+Function: max_depth_iterative (lines 21-37) - Covered
+Function: max_depth_dfs_stack (lines 40-56) - Covered
+
+Overall function coverage: 100.00%
+============================= test session starts =============================
+platform win32 -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0 -- C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe
+cachedir: .pytest_cache
+rootdir: D:\app\uploads\session_d80a8ad5
+plugins: cov-7.0.0
+collecting ... collected 11 items
+
+test_maximum_depth_binary_tree.py::test_max_depth_example1 PASSED        [  9%]
+test_maximum_depth_binary_tree.py::test_max_depth_example2 PASSED        [ 18%]
+test_maximum_depth_binary_tree.py::test_max_depth_empty PASSED           [ 27%]
+test_maximum_depth_binary_tree.py::test_max_depth_iterative_example1 PASSED [ 36%]
+test_maximum_depth_binary_tree.py::test_max_depth_iterative_example2 PASSED [ 45%]
+test_maximum_depth_binary_tree.py::test_max_depth_iterative_empty PASSED [ 54%]
+test_maximum_depth_binary_tree.py::test_max_depth_dfs_stack_example1 PASSED [ 63%]
+test_maximum_depth_binary_tree.py::test_max_depth_dfs_stack_example2 PASSED [ 72%]
+test_maximum_depth_binary_tree.py::test_max_depth_dfs_stack_empty PASSED [ 81%]
+test_maximum_depth_binary_tree.py::test_TreeNode PASSED                  [ 90%]
+test_maximum_depth_binary_tree.py::test_TreeNode_with_children PASSED    [100%]
+
+============================= 11 passed in 0.05s ==============================

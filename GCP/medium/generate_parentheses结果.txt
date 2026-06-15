@@ -1,0 +1,54 @@
+Name                                       Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------------------------
+generate_parentheses.py                       13      0      6      0   100%
+--------------------------------------------------------------------------------------
+TOTAL                                         13      0      6      0   100%
+
+
+
+Function Coverage Report:
+========================================
+Function: Solution.generateParenthesis (lines 3-19) - Covered
+Function: Solution.backtracking (lines 7-16) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 6 items
+
+session_60a96206/test_generate_parentheses.py::test_generateParenthesis_n_3 PASSED [ 16%]
+session_60a96206/test_generate_parentheses.py::test_generateParenthesis_n_1 PASSED [ 33%]
+session_60a96206/test_generate_parentheses.py::test_generateParenthesis_n_0 PASSED [ 50%]
+session_60a96206/test_generate_parentheses.py::test_generateParenthesis_n_8 FAILED [ 66%]
+session_60a96206/test_generate_parentheses.py::test_backtracking_single_call PASSED [ 83%]
+session_60a96206/test_generate_parentheses.py::test_backtracking_two_calls PASSED [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_generateParenthesis_n_8 _________________________
+
+    def test_generateParenthesis_n_8():
+        '''Test the generateParenthesis function with n = 8, should be a large list'''
+        solution = Solution()
+        expected_output = ["((()))((()))", "((()))(()())", "((()))(())()", "..."]  # truncated for brevity
+>       assert solution.generateParenthesis(8) == expected_output
+E       AssertionError: assert ['(((((((()))...)))()))', ...] == ['((()))((())...())()', '...']
+E
+E         At index 0 diff: '(((((((())))))))' != '((()))((()))'
+E         Left contains 1426 more items, first extra item: '((((((())))())))'
+E
+E         Full diff:
+E           [
+E         +     '(((((((())))))))',...
+E
+E         ...Full output truncated (1437 lines hidden), use '-vv' to show
+
+session_60a96206/test_generate_parentheses.py:26: AssertionError
+=========================== short test summary info ============================
+FAILED session_60a96206/test_generate_parentheses.py::test_generateParenthesis_n_8
+========================= 1 failed, 5 passed in 0.10s ==========================

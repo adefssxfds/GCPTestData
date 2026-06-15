@@ -1,0 +1,62 @@
+Name                                     Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------------------------------
+invert_binary_tree.py                       39      0     18      0   100%
+------------------------------------------------------------------------------------
+TOTAL                                       39      0     18      0   100%
+
+
+
+Function Coverage Report:
+========================================
+Function: TreeNode.__init__ (lines 4-7) - Covered
+Function: invert_tree (lines 10-20) - Covered
+Function: invert_tree_iterative (lines 23-41) - Covered
+Function: invert_tree_iterative_stack (lines 44-63) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 8 items
+
+session_7aa024ab/test_invert_binary_tree.py::test_invert_tree PASSED     [ 12%]
+session_7aa024ab/test_invert_binary_tree.py::test_invert_tree_iterative PASSED [ 25%]
+session_7aa024ab/test_invert_binary_tree.py::test_invert_tree_iterative_stack PASSED [ 37%]
+session_7aa024ab/test_invert_binary_tree.py::test_TreeNode PASSED        [ 50%]
+session_7aa024ab/test_invert_binary_tree.py::test_TreeNode_left_none PASSED [ 62%]
+session_7aa024ab/test_invert_binary_tree.py::test_TreeNode_right_none PASSED [ 75%]
+session_7aa024ab/test_invert_binary_tree.py::test_TreeNode_inversion_left FAILED [ 87%]
+session_7aa024ab/test_invert_binary_tree.py::test_TreeNode_inversion_right FAILED [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_TreeNode_inversion_left _________________________
+
+    def test_TreeNode_inversion_left():
+        node = TreeNode(1)
+        node.left = TreeNode(2)
+        invert_tree(node)
+        assert node.val == 1
+>       assert node.left.val == 2
+E       AttributeError: 'NoneType' object has no attribute 'val'
+
+session_7aa024ab/test_invert_binary_tree.py:116: AttributeError
+________________________ test_TreeNode_inversion_right _________________________
+
+    def test_TreeNode_inversion_right():
+        node = TreeNode(1)
+        node.right = TreeNode(2)
+        invert_tree(node)
+        assert node.val == 1
+>       assert node.right.val == 2
+E       AttributeError: 'NoneType' object has no attribute 'val'
+
+session_7aa024ab/test_invert_binary_tree.py:123: AttributeError
+=========================== short test summary info ============================
+FAILED session_7aa024ab/test_invert_binary_tree.py::test_TreeNode_inversion_left
+FAILED session_7aa024ab/test_invert_binary_tree.py::test_TreeNode_inversion_right
+========================= 2 failed, 6 passed in 0.04s ==========================

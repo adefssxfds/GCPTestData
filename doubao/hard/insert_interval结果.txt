@@ -1,0 +1,11 @@
+Coverage report: 98%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-10 20:59 +0800
+
+ 	 	Statements	 	Branches	 	Total
+File	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_hard\test_insert_interval.py	 	100%	44	0	0	 	88%	8	1	 	98%
+Total	 	100%	44	0	0	 	88%	8	1	 	98%
+coverage.py v7.14.1, created at 2026-06-10 20:59 +0800

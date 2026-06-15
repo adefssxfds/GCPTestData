@@ -1,0 +1,11 @@
+Coverage report: 98%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-09 21:13 +0800
+
+ 	 	Statements	 	Branches	 	Total
+File	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_easy\test_binary_tree_inorder_traversal.py	 	99%	93	1	0	 	95%	38	2	 	98%
+Total	 	99%	93	1	0	 	95%	38	2	 	98%
+coverage.py v7.14.1, created at 2026-06-09 21:13 +0800

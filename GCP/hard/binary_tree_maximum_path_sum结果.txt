@@ -1,0 +1,73 @@
+Name                                               Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------------------------------------
+binary_tree_maximum_path_sum.py                       33      0      4      0   100%
+----------------------------------------------------------------------------------------------
+TOTAL                                                 33      0      4      0   100%
+
+
+
+Function Coverage Report:
+========================================
+Function: TreeNode.__init__ (lines 3-6) - Covered
+Function: max_path_sum (lines 9-24) - Covered
+Function: max_path_helper (lines 12-21) - Covered
+Function: Solution.__init__ (lines 28-29) - Not covered
+Function: Solution.maxPathSum (lines 31-34) - Covered
+Function: Solution._dfs (lines 36-43) - Covered
+
+Overall function coverage: 83.33%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 14 items
+
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_max_path_sum_example_1 PASSED [  7%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_max_path_sum_example_2 PASSED [ 14%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_max_path_sum_negative_values PASSED [ 21%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_max_path_helper_example_1 FAILED [ 28%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_max_path_helper_example_2 FAILED [ 35%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_max_path_helper_negative_values FAILED [ 42%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_maxPathSum_example_1 PASSED [ 50%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_maxPathSum_example_2 PASSED [ 57%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_maxPathSum_negative_values PASSED [ 64%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_TreeNode_init PASSED [ 71%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_Solution_init PASSED [ 78%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_Solution_maxPathSum_example_1 PASSED [ 85%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_Solution_maxPathSum_example_2 PASSED [ 92%]
+session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_Solution_maxPathSum_negative_values PASSED [100%]
+
+=================================== FAILURES ===================================
+________________________ test_max_path_helper_example_1 ________________________
+
+    def test_max_path_helper_example_1():
+        root = create_tree([1, 2, 3])
+>       assert max_path_helper(root) == 6
+E       NameError: name 'max_path_helper' is not defined
+
+session_bfb44e52/test_binary_tree_maximum_path_sum.py:33: NameError
+________________________ test_max_path_helper_example_2 ________________________
+
+    def test_max_path_helper_example_2():
+        root = create_tree([-10, 9, 20, None, None, 15, 7])
+>       assert max_path_helper(root) == 42
+E       NameError: name 'max_path_helper' is not defined
+
+session_bfb44e52/test_binary_tree_maximum_path_sum.py:37: NameError
+_____________________ test_max_path_helper_negative_values _____________________
+
+    def test_max_path_helper_negative_values():
+        root = create_tree([-10, -20, -30, -40, -50])
+>       assert max_path_helper(root) == -10
+E       NameError: name 'max_path_helper' is not defined
+
+session_bfb44e52/test_binary_tree_maximum_path_sum.py:41: NameError
+=========================== short test summary info ============================
+FAILED session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_max_path_helper_example_1
+FAILED session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_max_path_helper_example_2
+FAILED session_bfb44e52/test_binary_tree_maximum_path_sum.py::test_max_path_helper_negative_values
+========================= 3 failed, 11 passed in 0.04s =========================

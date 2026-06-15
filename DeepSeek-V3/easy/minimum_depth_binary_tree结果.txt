@@ -1,0 +1,11 @@
+Coverage report: 97%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-10 21:52 +0800
+
+ 	 	Statements	 	Branches	 	Total
+File	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_easy\test_minimum_depth_binary_tree.py	 	99%	139	2	0	 	94%	70	4	 	97%
+Total	 	99%	139	2	0	 	94%	70	4	 	97%
+coverage.py v7.14.1, created at 2026-06-10 21:52 +0800

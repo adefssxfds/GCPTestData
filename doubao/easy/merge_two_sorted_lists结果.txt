@@ -1,0 +1,11 @@
+Coverage report: 96%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-09 21:50 +0800
+
+ 	 	Statements	 	Branches	 	Total
+File	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_easy\test_merge_two_sorted_lists.py	 	99%	79	1	0	 	91%	34	3	 	96%
+Total	 	99%	79	1	0	 	91%	34	3	 	96%
+coverage.py v7.14.1, created at 2026-06-09 21:50 +0800

@@ -1,0 +1,55 @@
+Name                                  Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------------------------------
+insert_interval.py                       17      0      8      1    96%   15->9
+---------------------------------------------------------------------------------
+TOTAL                                    17      0      8      1    96%
+
+
+
+Function Coverage Report:
+========================================
+Function: Interval.__init__ (lines 2-4) - Covered
+Function: Solution.insert (lines 7-19) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 5 items
+
+session_b5ac667e/test_insert_interval.py::test_insert_example1 PASSED    [ 20%]
+session_b5ac667e/test_insert_interval.py::test_insert_example2 PASSED    [ 40%]
+session_b5ac667e/test_insert_interval.py::test_insert_no_overlap PASSED  [ 60%]
+session_b5ac667e/test_insert_interval.py::test_insert_full_overlap FAILED [ 80%]
+session_b5ac667e/test_insert_interval.py::test_insert_multiple_overlaps PASSED [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_insert_full_overlap ___________________________
+
+    def test_insert_full_overlap():
+        solution = Solution()
+        intervals = [Interval(1, 5), Interval(5, 10)]
+        new_interval = Interval(3, 8)
+        expected = [Interval(1, 8)]
+        result = [Interval(interval.start, interval.end) for interval in solution.insert(intervals, new_interval)]
+>       assert result == expected
+E       AssertionError: assert [Interval(1, 10)] == [Interval(1, 8)]
+E
+E         At index 0 diff: Interval(1, 10) != Interval(1, 8)
+E
+E         Full diff:
+E           [
+E         -     Interval(1, 8),
+E         ?                 ^...
+E
+E         ...Full output truncated (3 lines hidden), use '-vv' to show
+
+session_b5ac667e/test_insert_interval.py:47: AssertionError
+=========================== short test summary info ============================
+FAILED session_b5ac667e/test_insert_interval.py::test_insert_full_overlap - A...
+========================= 1 failed, 4 passed in 0.03s ==========================

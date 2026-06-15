@@ -1,0 +1,60 @@
+Name                                           Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------------------------------------
+best_time_buy_sell_stock.py                       47      0     22      0   100%
+------------------------------------------------------------------------------------------
+TOTAL                                             47      0     22      0   100%
+
+
+
+Function Coverage Report:
+========================================
+Function: max_profit (lines 2-17) - Covered
+Function: max_profit_brute_force (lines 20-33) - Covered
+Function: max_profit_kadane_style (lines 36-53) - Covered
+Function: max_profit_with_indices (lines 56-78) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 12 items
+
+session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit PASSED [  8%]
+session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit_brute_force PASSED [ 16%]
+session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit_kadane_style PASSED [ 25%]
+session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit_with_indices FAILED [ 33%]
+session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit_empty_list PASSED [ 41%]
+session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit_single_price PASSED [ 50%]
+session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit_brute_force_empty_list PASSED [ 58%]
+session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit_brute_force_single_price PASSED [ 66%]
+session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit_kadane_style_empty_list PASSED [ 75%]
+session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit_kadane_style_single_price PASSED [ 83%]
+session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit_with_indices_empty_list PASSED [ 91%]
+session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit_with_indices_single_price PASSED [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_max_profit_with_indices _________________________
+
+    def test_max_profit_with_indices():
+        # Test case 1: Example from the problem statement
+>       assert max_profit_with_indices([7,1,5,3,6,4]) == (5, 2, 5)
+E       AssertionError: assert (5, 1, 4) == (5, 2, 5)
+E
+E         At index 1 diff: 1 != 2
+E
+E         Full diff:
+E           (
+E               5,
+E         -     2,...
+E
+E         ...Full output truncated (8 lines hidden), use '-vv' to show
+
+session_7d4ea353/test_best_time_buy_sell_stock.py:39: AssertionError
+=========================== short test summary info ============================
+FAILED session_7d4ea353/test_best_time_buy_sell_stock.py::test_max_profit_with_indices
+========================= 1 failed, 11 passed in 0.03s =========================

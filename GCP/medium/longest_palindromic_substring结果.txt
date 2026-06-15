@@ -1,0 +1,42 @@
+Name                                                Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------------------------------------
+longest_palindromic_substring.py                       62      1     34      0    99%   72
+-----------------------------------------------------------------------------------------------
+TOTAL                                                  62      1     34      0    99%
+
+
+
+Function Coverage Report:
+========================================
+Function: longest_palindrome (lines 1-24) - Covered
+Function: expand_around_center (lines 8-13) - Covered
+Function: longest_palindrome_dp (lines 27-53) - Covered
+Function: longest_palindrome_manacher (lines 56-79) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 4 items
+
+session_03057b72/test_longest_palindromic_substring.py::test_longest_palindrome PASSED [ 25%]
+session_03057b72/test_longest_palindromic_substring.py::test_longest_palindrome_dp PASSED [ 50%]
+session_03057b72/test_longest_palindromic_substring.py::test_longest_palindrome_manacher PASSED [ 75%]
+session_03057b72/test_longest_palindromic_substring.py::test_expand_around_center FAILED [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_expand_around_center ___________________________
+
+    def test_expand_around_center():
+>       assert expand_around_center(0, 0, "a") == 1
+E       NameError: name 'expand_around_center' is not defined
+
+session_03057b72/test_longest_palindromic_substring.py:29: NameError
+=========================== short test summary info ============================
+FAILED session_03057b72/test_longest_palindromic_substring.py::test_expand_around_center
+========================= 1 failed, 3 passed in 0.03s ==========================

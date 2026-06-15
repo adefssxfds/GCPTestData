@@ -1,0 +1,11 @@
+Coverage report: 98%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-12 17:00 +0800
+
+ 	 	Statements	 	Branches	 	Total
+File	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_medium\test_add_two_numbers.py	 	99%	122	1	0	 	94%	34	2	 	98%
+Total	 	99%	122	1	0	 	94%	34	2	 	98%
+coverage.py v7.14.1, created at 2026-06-12 17:00 +0800

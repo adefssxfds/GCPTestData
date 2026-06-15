@@ -1,0 +1,11 @@
+Coverage report: 99%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-12 16:52 +0800
+
+ 	 	Statements	 	Branches	 	Total
+File	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_easy\test_invert_binary_tree.py	 	100%	116	0	0	 	98%	48	1	 	99%
+Total	 	100%	116	0	0	 	98%	48	1	 	99%
+coverage.py v7.14.1, created at 2026-06-12 16:52 +0800

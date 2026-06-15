@@ -1,0 +1,11 @@
+Coverage report: 94%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-12 16:54 +0800
+
+ 	 	Statements	 	Branches	 	Total
+File	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_easy\test_longest_common_prefix.py	 	96%	101	4	0	 	90%	50	5	 	94%
+Total	 	96%	101	4	0	 	90%	50	5	 	94%
+coverage.py v7.14.1, created at 2026-06-12 16:54 +0800

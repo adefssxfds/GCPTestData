@@ -1,0 +1,49 @@
+Name                 Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------
+combination_sum.py      13      0      6      0   100%
+----------------------------------------------------------------
+TOTAL                   13      0      6      0   100%
+Function Coverage Report:
+========================================
+Function: Solution.combinationSum (lines 2-17) - Covered
+Function: Solution.recursive (lines 6-14) - Covered
+
+Overall function coverage: 100.00%
+============================= test session starts =============================
+platform win32 -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0 -- C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe
+cachedir: .pytest_cache
+rootdir: D:\app\uploads\session_e7d2cbe7
+plugins: cov-7.0.0
+collecting ... collected 6 items
+
+test_combination_sum.py::test_combinationSum_example1 PASSED             [ 16%]
+test_combination_sum.py::test_combinationSum_example2 PASSED             [ 33%]
+test_combination_sum.py::test_combinationSum_example3 PASSED             [ 50%]
+test_combination_sum.py::test_combinationSum_empty_candidates PASSED     [ 66%]
+test_combination_sum.py::test_combinationSum_single_candidate PASSED     [ 83%]
+test_combination_sum.py::test_combinationSum_large_target FAILED         [100%]
+
+================================== FAILURES ===================================
+______________________ test_combinationSum_large_target _______________________
+
+    def test_combinationSum_large_target():
+        solution = Solution()
+        candidates = [2, 3, 5]
+        target = 30
+        expected = [[2, 2, 2, 2, 2, 2], [3, 3, 3, 3, 3, 3], [5, 5, 5, 5, 5, 5], [2, 2, 2, 2, 2, 3], [2, 2, 2, 2, 2, 5], [2, 2, 2, 2, 3, 3], [2, 2, 2, 2, 3, 5], [2, 2, 2, 2, 5, 5], [2, 2, 2, 3, 3, 3], [2, 2, 2, 3, 3, 5], [2, 2, 2, 3, 5, 5], [2, 2, 2, 5, 5, 5], [2, 2, 3, 3, 3, 3], [2, 2, 3, 3, 3, 5], [2, 2, 3, 3, 5, 5], [2, 2, 3, 5, 5, 5], [2, 2, 5, 5, 5, 5], [2, 3, 3, 3, 3, 3], [2, 3, 3, 3, 3, 5], [2, 3, 3, 3, 5, 5], [2, 3, 3, 5, 5, 5], [2, 3, 5, 5, 5, 5], [2, 5, 5, 5, 5, 5], [3, 3, 3, 3, 3, 3], [3, 3, 3, 3, 3, 5], [3, 3, 3, 3, 5, 5], [3, 3, 3, 5, 5, 5], [3, 3, 5, 5, 5, 5], [3, 5, 5, 5, 5, 5], [5, 5, 5, 5, 5, 5]]
+>       assert solution.combinationSum(candidates, target) == expected
+E       AssertionError: assert [[2, 2, 2, 2,... 2, ...], ...] == [[2, 2, 2, 2,...2, 3, 3], ...]
+E         
+E         At index 0 diff: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] != [2, 2, 2, 2, 2, 2]
+E         Right contains 9 more items, first extra item: [2, 3, 5, 5, 5, 5]
+E         
+E         Full diff:
+E           [
+E               [...
+E         
+E         ...Full output truncated (675 lines hidden), use '-vv' to show
+
+test_combination_sum.py:45: AssertionError
+=========================== short test summary info ===========================
+FAILED test_combination_sum.py::test_combinationSum_large_target - AssertionE...
+========================= 1 failed, 5 passed in 6.09s =========================

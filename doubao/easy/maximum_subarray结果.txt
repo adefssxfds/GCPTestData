@@ -1,0 +1,11 @@
+Coverage report: 92%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-09 21:44 +0800
+
+ 	 	 	Statements	 	Branches	 	Total
+File	class	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_easy\test_maximum_subarray.py	(no class)	 	95%	63	3	0	 	83%	24	4	 	92%
+Total	 	 	95%	63	3	0	 	83%	24	4	 	92%
+coverage.py v7.14.1, created at 2026-06-09 21:44 +0800

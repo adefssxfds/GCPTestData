@@ -1,0 +1,11 @@
+Coverage report: 99%Show/hide keyboard shortcuts
+filter...
+ hide covered
+Files Functions Classes
+coverage.py v7.14.1, created at 2026-06-12 16:53 +0800
+
+ 	 	Statements	 	Branches	 	Total
+File	 	coverage	statements	missing	excluded	 	coverage	branches	partial	 	coverage
+test_easy\test_length_of_last_word.py	 	100%	53	0	0	 	95%	20	1	 	99%
+Total	 	100%	53	0	0	 	95%	20	1	 	99%
+coverage.py v7.14.1, created at 2026-06-12 16:53 +0800

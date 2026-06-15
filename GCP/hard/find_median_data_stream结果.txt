@@ -1,0 +1,65 @@
+Name                                          Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------------------------------
+find_median_data_stream.py                       52      0     20      1    99%   10->13
+-----------------------------------------------------------------------------------------
+TOTAL                                            52      0     20      1    99%
+
+
+
+Function Coverage Report:
+========================================
+Function: MedianFinder.__init__ (lines 4-6) - Covered
+Function: MedianFinder.addNum (lines 8-15) - Covered
+Function: MedianFinder.findMedian (lines 17-21) - Covered
+Function: MedianFinderAlternative.__init__ (lines 25-27) - Covered
+Function: MedianFinderAlternative.addNum (lines 29-39) - Covered
+Function: MedianFinderAlternative.findMedian (lines 41-45) - Covered
+Function: MedianFinderSorted.__init__ (lines 50-51) - Covered
+Function: MedianFinderSorted.addNum (lines 53-62) - Covered
+Function: MedianFinderSorted.findMedian (lines 64-69) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 13 items
+
+session_cc2e130f/test_find_median_data_stream.py::test_MedianFinder PASSED [  7%]
+session_cc2e130f/test_find_median_data_stream.py::test_MedianFinderAlternative PASSED [ 15%]
+session_cc2e130f/test_find_median_data_stream.py::test_MedianFinderSorted PASSED [ 23%]
+session_cc2e130f/test_find_median_data_stream.py::test_MedianFinder_addNum PASSED [ 30%]
+session_cc2e130f/test_find_median_data_stream.py::test_MedianFinder_findMedian PASSED [ 38%]
+session_cc2e130f/test_find_median_data_stream.py::test_MedianFinderAlternative_addNum PASSED [ 46%]
+session_cc2e130f/test_find_median_data_stream.py::test_MedianFinderAlternative_findMedian PASSED [ 53%]
+session_cc2e130f/test_find_median_data_stream.py::test_MedianFinderSorted_addNum PASSED [ 61%]
+session_cc2e130f/test_find_median_data_stream.py::test_MedianFinderSorted_findMedian PASSED [ 69%]
+session_cc2e130f/test_find_median_data_stream.py::test_MedianFinder_edge_cases FAILED [ 76%]
+session_cc2e130f/test_find_median_data_stream.py::test_MedianFinderAlternative_edge_cases PASSED [ 84%]
+session_cc2e130f/test_find_median_data_stream.py::test_MedianFinderSorted_edge_cases PASSED [ 92%]
+session_cc2e130f/test_find_median_data_stream.py::test_basic PASSED      [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_MedianFinder_edge_cases _________________________
+
+    def test_MedianFinder_edge_cases():
+        median_finder = MedianFinder()
+        median_finder.addNum(1)
+        median_finder.addNum(2)
+        median_finder.addNum(3)
+        median_finder.addNum(4)
+        median_finder.addNum(5)
+        median_finder.addNum(6)
+>       assert median_finder.findMedian() == 4.0
+E       assert 3.5 == 4.0
+E        +  where 3.5 = findMedian()
+E        +    where findMedian = <find_median_data_stream.MedianFinder object at 0xffffbcb38fa0>.findMedian
+
+session_cc2e130f/test_find_median_data_stream.py:90: AssertionError
+=========================== short test summary info ============================
+FAILED session_cc2e130f/test_find_median_data_stream.py::test_MedianFinder_edge_cases
+========================= 1 failed, 12 passed in 0.04s =========================

@@ -1,0 +1,46 @@
+Name                                           Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------------------------------------
+interleaving_string_copy.py                       15      0     12      0   100%
+------------------------------------------------------------------------------------------
+TOTAL                                             15      0     12      0   100%
+
+
+
+Function Coverage Report:
+========================================
+Function: Solution.isInterleave (lines 2-17) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 6 items
+
+session_a6a543b1/test_interleaving_string_copy.py::test_isInterleave_empty_s1_s2_s3 PASSED [ 16%]
+session_a6a543b1/test_interleaving_string_copy.py::test_isInterleave_s1_s2_s3_with_only_s1 PASSED [ 33%]
+session_a6a543b1/test_interleaving_string_copy.py::test_isInterleave_s1_s2_s3_with_only_s2 PASSED [ 50%]
+session_a6a543b1/test_interleaving_string_copy.py::test_isInterleave_s1_s2_s3_with_both_s1_s2 PASSED [ 66%]
+session_a6a543b1/test_interleaving_string_copy.py::test_isInterleave_s1_s2_s3_with_non_interleaving PASSED [ 83%]
+session_a6a543b1/test_interleaving_string_copy.py::test_isInterleave_s1_s2_s3_with_different_length FAILED [100%]
+
+=================================== FAILURES ===================================
+_______________ test_isInterleave_s1_s2_s3_with_different_length _______________
+
+    def test_isInterleave_s1_s2_s3_with_different_length():
+        '''Test with s3 length different from s1 + s2 length'''
+        solution = Solution()
+        s1, s2, s3 = "abc", "def", "abcdef"
+>       assert solution.isInterleave(s1, s2, s3) == False
+E       AssertionError: assert True == False
+E        +  where True = isInterleave('abc', 'def', 'abcdef')
+E        +    where isInterleave = <interleaving_string_copy.Solution object at 0xffffa7f3cbe0>.isInterleave
+
+session_a6a543b1/test_interleaving_string_copy.py:38: AssertionError
+=========================== short test summary info ============================
+FAILED session_a6a543b1/test_interleaving_string_copy.py::test_isInterleave_s1_s2_s3_with_different_length
+========================= 1 failed, 5 passed in 0.02s ==========================

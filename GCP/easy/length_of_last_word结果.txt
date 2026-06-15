@@ -1,0 +1,72 @@
+Name                                      Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------------------------------
+length_of_last_word.py                       11      0      4      0   100%
+-------------------------------------------------------------------------------------
+TOTAL                                        11      0      4      0   100%
+
+
+
+Function Coverage Report:
+========================================
+Function: length_of_last_word (lines 1-13) - Covered
+Function: length_of_last_word_split (lines 16-17) - Not covered
+
+Overall function coverage: 50.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 10 items
+
+session_9c851ec0/test_length_of_last_word.py::test_length_of_last_word_example1 PASSED [ 10%]
+session_9c851ec0/test_length_of_last_word.py::test_length_of_last_word_example2 PASSED [ 20%]
+session_9c851ec0/test_length_of_last_word.py::test_length_of_last_word_example3 PASSED [ 30%]
+session_9c851ec0/test_length_of_last_word.py::test_length_of_last_word_empty_string PASSED [ 40%]
+session_9c851ec0/test_length_of_last_word.py::test_length_of_last_word_only_spaces PASSED [ 50%]
+session_9c851ec0/test_length_of_last_word.py::test_length_of_last_word_split_example1 PASSED [ 60%]
+session_9c851ec0/test_length_of_last_word.py::test_length_of_last_word_split_example2 PASSED [ 70%]
+session_9c851ec0/test_length_of_last_word.py::test_length_of_last_word_split_example3 PASSED [ 80%]
+session_9c851ec0/test_length_of_last_word.py::test_length_of_last_word_split_empty_string FAILED [ 90%]
+session_9c851ec0/test_length_of_last_word.py::test_length_of_last_word_split_only_spaces FAILED [100%]
+
+=================================== FAILURES ===================================
+_________________ test_length_of_last_word_split_empty_string __________________
+
+    def test_length_of_last_word_split_empty_string():
+        """Test the length of the last word in an empty string is 0 using split method."""
+>       assert length_of_last_word_split("") == 0
+
+session_9c851ec0/test_length_of_last_word.py:38:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+s = ''
+
+    def length_of_last_word_split(s: str) -> int:
+>       return len(s.strip().split()[-1])
+E       IndexError: list index out of range
+
+session_9c851ec0/length_of_last_word.py:17: IndexError
+__________________ test_length_of_last_word_split_only_spaces __________________
+
+    def test_length_of_last_word_split_only_spaces():
+        """Test the length of the last word in a string with only spaces is 0 using split method."""
+>       assert length_of_last_word_split("     ") == 0
+
+session_9c851ec0/test_length_of_last_word.py:42:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+s = '     '
+
+    def length_of_last_word_split(s: str) -> int:
+>       return len(s.strip().split()[-1])
+E       IndexError: list index out of range
+
+session_9c851ec0/length_of_last_word.py:17: IndexError
+=========================== short test summary info ============================
+FAILED session_9c851ec0/test_length_of_last_word.py::test_length_of_last_word_split_empty_string
+FAILED session_9c851ec0/test_length_of_last_word.py::test_length_of_last_word_split_only_spaces
+========================= 2 failed, 8 passed in 0.03s ==========================

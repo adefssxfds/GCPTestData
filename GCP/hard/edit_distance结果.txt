@@ -1,0 +1,35 @@
+Name                                Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------------------------
+edit_distance.py                       14      0     10      0   100%
+-------------------------------------------------------------------------------
+TOTAL                                  14      0     10      0   100%
+
+
+
+Function Coverage Report:
+========================================
+Function: Solution.minDistance (lines 2-20) - Covered
+
+Overall function coverage: 100.00%
+
+
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /app/uploads
+plugins: cov-7.0.0
+collecting ... collected 10 items
+
+session_f67cf063/test_edit_distance.py::test_minDistance_single_insert PASSED [ 10%]
+session_f67cf063/test_edit_distance.py::test_minDistance_single_delete PASSED [ 20%]
+session_f67cf063/test_edit_distance.py::test_minDistance_single_replace PASSED [ 30%]
+session_f67cf063/test_edit_distance.py::test_minDistance_multiple_operations PASSED [ 40%]
+session_f67cf063/test_edit_distance.py::test_minDistance_empty_to_non_empty PASSED [ 50%]
+session_f67cf063/test_edit_distance.py::test_minDistance_non_empty_to_empty PASSED [ 60%]
+session_f67cf063/test_edit_distance.py::test_minDistance_same_strings PASSED [ 70%]
+session_f67cf063/test_edit_distance.py::test_minDistance_long_to_short PASSED [ 80%]
+session_f67cf063/test_edit_distance.py::test_minDistance_short_to_long PASSED [ 90%]
+session_f67cf063/test_edit_distance.py::test_minDistance_mixed_operations PASSED [100%]
+
+============================== 10 passed in 0.02s ==============================
